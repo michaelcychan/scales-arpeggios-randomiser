@@ -20,7 +20,12 @@ class Pickerview {
     typeList.forEach(type => {
       document.getElementById(`${type}-list`).innerHTML = bigList[type].join("<br>")
     })
-    document.getElementById('what-to-practice').innerHTML = this.model.randomPick(gradeValue, checkedTypeList)
+    let randomChoice = this.model.randomPick(gradeValue, checkedTypeList);
+    console.log(randomChoice)
+    if (randomChoice == undefined) {
+      randomChoice = "Please choose at least one list"
+    }
+    document.getElementById('what-to-practice').innerHTML = randomChoice
   }
 
 }

@@ -21,7 +21,6 @@ describe('PickerView', () => {
     const chromaticCheckBox = document.getElementById('scales')
     view.updateView();
     document.querySelector('#pick').click();
-
     expect(document.querySelector('#grade-list').textContent).toMatch("Scales:")
     expect(document.querySelector('#grade-list').textContent).toMatch("A minor (2 octaves) (melodic or harmonic at candidate's choice)")
     expect(document.querySelector('#grade-list').textContent).toMatch("D Minor (2 octaves)")

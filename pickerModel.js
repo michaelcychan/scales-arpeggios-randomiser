@@ -1,30 +1,8 @@
+const gradeMap = require('./gradeList')
+
 class Picker {
   constructor() {
-    this.gradeMap = {
-      3: {
-        "scales": [
-          "Ab Major (1 octave)",
-          "Eb Major (1 octave)",
-          "E Major (1 octave)",
-          "Bb Major (2 octaves)",
-          "D Major (2 octaves)",
-          "A minor (2 octaves) (melodic or harmonic at candidate's choice)",
-          "D minor (2 octaves)"
-        ],
-        "arpeggios": [
-          "Ab Major (1 octave)",
-          "Eb Major (1 octave)",
-          "E Major (1 octave)",
-          "Bb Major (2 octaves)",
-          "B Major (2 octaves)",
-          "A Minor (2 octaves)",
-          "D Minor (2 octaves)"
-        ],
-        "chromatics": [
-          "Starting on D (open string)"
-        ]
-      } 
-    }
+    this.gradeMap = gradeMap
   }
 
   test() {
