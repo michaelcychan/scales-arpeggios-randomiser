@@ -9,13 +9,13 @@
   <body>
     <h1 id="title">Scales and Arpeggios Randomiser</h1>
     <header>
-      <p>Grade: <input type="number" value="3" max="3" min="3"></p>
+      <p>Grade: <input id="grade-selector" type="number" max="3" min="3"></p>
       <br>
 
       <p>Choose from:
-        <label for="scales">Scales</label><input type="checkbox" id="type" name="scales" value="scales">
-        <label for="arpeggios">Arpeggios</label><input type="checkbox" id="type" name="arpeggios" value="arpeggios">
-        <label for="chromatics">Chromatics</label><input type="checkbox" id="type" name="chromatics" value="chromatics">
+        <label for="scales">Scales</label><input type="checkbox" id="scales" name="scales" value="scales">
+        <label for="arpeggios">Arpeggios</label><input type="checkbox" id="arpeggios" name="arpeggios" value="arpeggios">
+        <label for="chromatics">Chromatics</label><input type="checkbox" id="chromatics" name="chromatics" value="chromatics">
       </p>
       <button id="pick">Pick one</button>
     </header>
