@@ -27,6 +27,10 @@ class Picker {
     }
   }
 
+  test() {
+    return 'This is the Picker Model!'
+  }
+
   getList(grade){
     return this.gradeMap[grade]
   }
