@@ -69,12 +69,18 @@
           });
         }
         updateView() {
+          const typeList = ["scales", "arpeggios", "chromatics"];
           const gradeValue = document.getElementById("grade-selector").value;
-          const checkedTypes = document.querySelector("#chromatics");
-          console.log(checkedTypes);
+          const checkedTypeList = [];
+          typeList.forEach((type) => {
+            if (document.getElementById(type).checked) {
+              checkedTypeList.push(type);
+            }
+          });
+          console.log(checkedTypeList);
           document.querySelector("#grade-list").textContent = this.model.getList(gradeValue);
           console.log(this.model.randomPick(3, ["chromatics"]));
-          document.querySelector("#what-to-practice").textContent = this.model.randomPick(gradeValue, ["scales", "arpeggios", "chromatics"]);
+          document.querySelector("#what-to-practice").textContent = this.model.randomPick(gradeValue, checkedTypeList);
         }
       };
       module.exports = Pickerview;
