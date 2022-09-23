@@ -21,8 +21,8 @@ npm run test
 ```
 
 ## To Do list
-[X] Allow to generate the full list for grade 3
-[X] Allow to print a random scale for grade 3
-[X] Limit grade level from 1 to 8 
-[] Expand the list from grade 1 to 8 (Currently only grade 2 and 3)
-[] Add Styling
+[X] Allow to generate the full list for grade 3  
+[X] Allow to print a random scale for grade 3  
+[X] Limit grade level from 1 to 8   
+[] Expand the list from grade 1 to 8 (Currently only grade 2 and 3)  
+[] Add Styling  
