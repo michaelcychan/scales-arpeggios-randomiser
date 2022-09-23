@@ -9,21 +9,26 @@
   <body>
     <h1 id="title">Scales and Arpeggios Randomiser</h1>
     <header>
-      <p>Grade: <input id="grade-selector" type="number" max="3" min="3"></p>
+      <p>Grade: <input id="grade-selector" type="number" max="1" min="9" value="3"></p>
       <br>
 
       <p>Choose from:
-        <label for="scales">Scales</label><input type="checkbox" id="scales" name="scales" value="scales">
-        <label for="arpeggios">Arpeggios</label><input type="checkbox" id="arpeggios" name="arpeggios" value="arpeggios">
-        <label for="chromatics">Chromatics</label><input type="checkbox" id="chromatics" name="chromatics" value="chromatics">
+        <label for="scales">Scales</label><input type="checkbox" id="scales" name="scales" value="scales" checked>
+        <label for="arpeggios">Arpeggios</label><input type="checkbox" id="arpeggios" name="arpeggios" value="arpeggios" checked>
+        <label for="chromatics">Chromatics</label><input type="checkbox" id="chromatics" name="chromatics" value="chromatics" checked>
       </p>
       <button id="pick">Pick one</button>
     </header>
-    <section>
+    <section id="practice">
       <h3 id="what-to-practice">Let's Go!</h3>
     </section>
-    <section id="grade-list">
-
+    <section  id="grade-list">
+      <h4>Scales:</h4>
+      <div id="scales-list"></div>
+      <h4>Arpeggios:</h4>
+      <div id="arpeggios-list"></div>
+      <h4>Chromatics:</h4>
+      <div id="chromatics-list"></div>
     </section>
   </body>
 </html>

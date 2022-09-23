@@ -12,16 +12,19 @@ describe('PickerView', () => {
   it('checks initial state', () => {
     const picker = new Picker()
     const view = new PickerView(picker);
-    view.updateView();
     expect(document.querySelector('#title').innerHTML).toBe("Scales and Arpeggios Randomiser")
     expect(document.querySelector('#what-to-practice').innerHTML).toBe("Let's Go!")
   });
   it('shows list of grade 3 scales', () => {
     const picker = new Picker()
     const view = new PickerView(picker);
+    const chromaticCheckBox = document.getElementById('scales')
     view.updateView();
     document.querySelector('#pick').click();
-    expect(document.querySelector('#grade-list').innerHTML).toBe("Ab Major (1 octave)")
+
+    expect(document.querySelector('#grade-list').textContent).toMatch("Scales:")
+    expect(document.querySelector('#grade-list').textContent).toMatch("A minor (2 octaves) (melodic or harmonic at candidate's choice)")
+    expect(document.querySelector('#grade-list').textContent).toMatch("D Minor (2 octaves)")
   });
 
 
