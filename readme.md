@@ -9,6 +9,17 @@ cd scales-arpeggios-randomiser
 npm install
 ```
 
+## To generate bundle.js
+```
+npm run build
+```
+Keep this terminal open  
+
+## To run test
+```
+npm run test
+```
+
 ## To Do list
 [X] Allow to generate the full list for grade 3
 [X] Allow to print a random scale for grade 3
