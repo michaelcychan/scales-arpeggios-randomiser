@@ -8,7 +8,7 @@ class Pickerview {
   }
 
   updateView() {
-    const typeList = ["scales", "arpeggios", "chromatics"]
+    const typeList = ["scales", "arpeggios", "chromatics", "dominant7th"]
     const gradeValue = document.getElementById('grade-selector').value;
     const checkedTypeList = []
     typeList.forEach(type => {
@@ -18,12 +18,16 @@ class Pickerview {
     })
     const bigList = this.model.getList(gradeValue)
     typeList.forEach(type => {
-      document.getElementById(`${type}-list`).innerHTML = bigList[type].join("<br>")
+      let wholeList = bigList[type].join("<br>")
+      if (wholeList == "") {
+        wholeList = "None for this grade"
+      }
+      document.getElementById(`${type}-list`).innerHTML = wholeList
     })
     let randomChoice = this.model.randomPick(gradeValue, checkedTypeList);
     console.log(randomChoice)
     if (randomChoice == undefined) {
-      randomChoice = "Please choose at least one list"
+      randomChoice = "None was selected / available for this grade"
     }
     document.getElementById('what-to-practice').innerHTML = randomChoice
   }
