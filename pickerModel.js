@@ -1,7 +1,5 @@
-const gradeMapJSON = require('./gradeList.json')
-
 class Picker {
-  constructor() {
+  constructor(gradeMapJSON) {
     this.gradeMap = gradeMapJSON
   }
 
