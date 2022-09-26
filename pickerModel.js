@@ -1,8 +1,8 @@
-const gradeMap = require('./gradeList')
+const gradeMapJSON = require('./gradeList.json')
 
 class Picker {
   constructor() {
-    this.gradeMap = gradeMap
+    this.gradeMap = gradeMapJSON
   }
 
   test() {
@@ -10,6 +10,7 @@ class Picker {
   }
 
   getList(grade){
+    console.log(grade)
     return this.gradeMap[grade]
   }
 

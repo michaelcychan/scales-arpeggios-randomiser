@@ -1,5 +1,5 @@
-const gradeMap = {
-  2: {
+{
+  "2": {
     "scales": [
       "C Major (1 octave)",
       "F Major (1 octave)",
@@ -25,7 +25,7 @@ const gradeMap = {
 
     ]
   },
-  3: {
+  "3": {
     "scales": [
       "Ab Major (1 octave)",
       "Eb Major (1 octave)",
@@ -51,7 +51,7 @@ const gradeMap = {
 
     ]
   },
-  4: {
+  "4": {
     "scales": [
       "Ab Major (2 octaves)",
       "B Major (2 octaves)",
@@ -80,5 +80,3 @@ const gradeMap = {
     ]
   } 
 }
-
-module.exports = gradeMap
