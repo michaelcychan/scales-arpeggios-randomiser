@@ -66,7 +66,7 @@ The List of scales is stored in gradeList.json in JSON format. The file structur
 - [X] Contains Scales, Arpeggios, chromatics, and Dominant 7th.  
 - [X] Allow to print a random scale for grade 3  
 - [X] Limit grade level from 1 to 8   
-- [] Expand the list from grade 1 to 8 (Currently only grade 2 - 4)  
-- [] Add Styling  
+- [ ] Expand the list from grade 1 to 8 (Currently only grade 2 - 4)  
+- [ ] Add Styling  
 - [X] Inform user if the grade / list pair contains nothing.
 - [X] Add GitHub Actions to do automatic testing upon push
