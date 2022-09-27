@@ -5,5 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - names: Run tests
+      - name: Run tests
         run: npm run test
