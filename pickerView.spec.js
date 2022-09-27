@@ -5,18 +5,19 @@
 const fs = require('fs')
 const PickerView = require('./pickerView')
 const Picker = require('./pickerModel')
+const gradeMapJSON = require('./gradeList.json')
 
 describe('PickerView', () => {
   document.body.innerHTML = fs.readFileSync('./index.html');
 
   it('checks initial state', () => {
-    const picker = new Picker()
+    const picker = new Picker(gradeMapJSON)
     const view = new PickerView(picker);
     expect(document.querySelector('#title').innerHTML).toBe("Scales and Arpeggios Randomiser")
     expect(document.querySelector('#what-to-practice').innerHTML).toBe("Let's Go!")
   });
   it('shows list of grade 3 scales', () => {
-    const picker = new Picker()
+    const picker = new Picker(gradeMapJSON)
     const view = new PickerView(picker);
     const chromaticCheckBox = document.getElementById('scales')
     view.updateView();

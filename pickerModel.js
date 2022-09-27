@@ -8,7 +8,6 @@ class Picker {
   }
 
   getList(grade){
-    console.log(grade)
     return this.gradeMap[grade]
   }
 
