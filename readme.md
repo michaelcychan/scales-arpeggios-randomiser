@@ -1,6 +1,8 @@
 # Scales and Arpeggios Randomiser
 
-It is to generate a scale / arpeggio / chromatic from the ABRSM syllabus for young violinist to choose  to practise.
+It is to generate a scale / arpeggio / chromatic from the ABRSM syllabus for young violinist to choose to practise.
+
+At the same time, it is a project enough for me to test different things. I have recently added automatic testing using GitHub Actions.
 
 ## To clone and install
 ```
@@ -60,10 +62,11 @@ The List of scales is stored in gradeList.json in JSON format. The file structur
 ```
 
 ## To Do list
-[X] Allow to generate the full list for grade 3  
-[X] Contains Scales, Arpeggios, chromatics, and Dominant 7th.  
-[X] Allow to print a random scale for grade 3  
-[X] Limit grade level from 1 to 8   
-[] Expand the list from grade 1 to 8 (Currently only grade 2 - 4)  
-[] Add Styling  
-[X] Inform user if the grade / list pair contains nothing.  
+- [X] Allow to generate the full list for grade 3  
+- [X] Contains Scales, Arpeggios, chromatics, and Dominant 7th.  
+- [X] Allow to print a random scale for grade 3  
+- [X] Limit grade level from 1 to 8   
+- [] Expand the list from grade 1 to 8 (Currently only grade 2 - 4)  
+- [] Add Styling  
+- [X] Inform user if the grade / list pair contains nothing.
+- [X] Add GitHub Actions to do automatic testing upon push
