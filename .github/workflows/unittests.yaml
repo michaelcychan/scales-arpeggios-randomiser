@@ -5,5 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: Setup
+        run: npm install
       - name: Run tests
-        run: jest --coverage
+        run: npm run test
