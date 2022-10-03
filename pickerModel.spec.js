@@ -28,6 +28,10 @@ describe('Picker', () => {
       
     ]
   }
+  it('returns the string provided by test function', () => {
+    const picker = new Picker(gradeMapJSON);
+    expect(picker.test()).toBe('This is the Picker Model!')
+  })
   it('returns grade 3 list', () => {
     const picker = new Picker(gradeMapJSON);
     expect(picker.getList(3)).toStrictEqual(grade3List)
@@ -46,5 +50,15 @@ describe('Picker', () => {
     const picker = new Picker(gradeMapJSON);
     jest.spyOn(global.Math, 'random').mockReturnValue(0.999)
     expect(picker.randomPick(3, ["scales", "chromatics"])).toBe("Starting on D (open string)")
+  });
+  it("returns nothing from Dominant 7th list from grade 3", () => {
+    const picker = new Picker(gradeMapJSON);
+    jest.spyOn(global.Math, 'random').mockReturnValue(0.999)
+    expect(picker.randomPick(3, ["dominant7th"])).toBe(undefined)
+  });
+  it("picks another random scale from scales + chromatic list from grade 4", () => {
+    const picker = new Picker(gradeMapJSON);
+    jest.spyOn(global.Math, 'random').mockReturnValue(0.999)
+    expect(picker.randomPick(4, ["scales", "chromatics"])).toBe("Starting on E (starting form bottom E)")
   });
 })

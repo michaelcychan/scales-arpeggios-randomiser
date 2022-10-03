@@ -25,7 +25,6 @@ class Pickerview {
       document.getElementById(`${type}-list`).innerHTML = wholeList
     })
     let randomChoice = this.model.randomPick(gradeValue, checkedTypeList);
-    console.log(randomChoice)
     if (randomChoice == undefined) {
       randomChoice = "None was selected / available for this grade"
     }
