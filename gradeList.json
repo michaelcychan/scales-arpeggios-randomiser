@@ -1,4 +1,23 @@
 {
+  "1": {
+    "scales": [
+      "D major (1 octave)",
+      "E natural minor (1 octave)",
+      "G Major (2 octaves)"
+    ],
+    "arpeggios": [
+      "D major (1 octave)",
+      "A major (1 octave)",
+      "E minor (1 octave)",
+      "G major (2 octaves)"
+    ],
+    "chromatics": [
+      
+    ], 
+    "dominant7th": [
+
+    ]
+  },
   "2": {
     "scales": [
       "C Major (1 octave)",
@@ -80,3 +99,4 @@
     ]
   } 
 }
+
