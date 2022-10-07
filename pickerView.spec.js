@@ -13,7 +13,7 @@ describe('PickerView', () => {
   it('checks initial state', () => {
     const picker = new Picker(gradeMapJSON)
     const view = new PickerView(picker);
-    expect(document.getElementById('title').innerHTML).toBe("Scales and Arpeggios Randomiser")
+    expect(document.getElementById('title').innerHTML).toBe("Scales Randomiser")
     expect(document.getElementById('what-to-practice').innerHTML).toBe("Let's Go!")
   });
   it('shows list of grade 3 scales', () => {
