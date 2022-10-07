@@ -6,9 +6,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --coverage",
-    "build": "esbuild index.js --bundle  --outfile=bundle.js --watch",
-    "predeploy": "npm run build",
-    "deploy": "npm run build && gh-pages -d build"
+    "build": "esbuild index.js --bundle  --outfile=bundle.js --watch"
   },
   "keywords": [],
   "author": "",
@@ -22,7 +20,4 @@
   "jest": {
     "testEnvironment": "jsdom"
   },
-  "devDependencies": {
-    "gh-pages": "^4.0.0"
-  }
 }
