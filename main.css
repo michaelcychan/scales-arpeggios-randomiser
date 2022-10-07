@@ -18,3 +18,12 @@ input[type=checkbox] {
 input[type=number] {
   zoom: 2
 }
+
+button {
+  padding: 16px 16px;
+  background-color: burlywood;
+  font-family: cursive;
+  font-size: 0.65em;
+  border-radius: 20px;
+  border-style:dashed;
+}
