@@ -1,11 +1,14 @@
 {
+  "homepage": "https://michaelcychan.github.io/scales-arpeggios-randomiser/",
   "name": "scales-arpeggios-randomiser",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "jest --coverage",
-    "build": "esbuild index.js --bundle  --outfile=bundle.js --watch"
+    "build": "esbuild index.js --bundle  --outfile=bundle.js --watch",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -18,5 +21,8 @@
   },
   "jest": {
     "testEnvironment": "jsdom"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
